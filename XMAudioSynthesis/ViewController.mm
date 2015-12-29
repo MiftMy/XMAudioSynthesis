@@ -14,6 +14,7 @@
 
 @interface ViewController (){
     NSMutableArray *_audioMixParams;
+    
 }
 @property (nonatomic,strong) VVERecordPlay *rpManager;
 @property (nonatomic,strong) NSString *recordPath;
@@ -36,9 +37,11 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    XMAudioMix *s = [[XMAudioMix alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,7 +55,7 @@
     }
     return _rpManager;
 }
-#pragma mark - 音频合成
+#pragma mark  音频合成
 /// 音频合成
 - (void) exportAudio {
 
@@ -259,6 +262,7 @@
     @finally {
         NSLog(@"执行完成");
     }
+    
 }
 
 

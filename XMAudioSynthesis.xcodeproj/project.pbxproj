@@ -51,6 +51,7 @@
 		2C38705B1C22B0FD00D75C90 /* ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRuntime.m; sourceTree = "<group>"; };
 		2C38705C1C22B0FD00D75C90 /* UIView+ColorPointAndMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorPointAndMask.h"; sourceTree = "<group>"; };
 		2C38705D1C22B0FD00D75C90 /* UIView+ColorPointAndMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorPointAndMask.m"; sourceTree = "<group>"; };
+		2C6734821C2E3CAD00D8A72C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		2C88014B1C0BF20B00C5C42A /* XMAudioSynthesis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMAudioSynthesis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C88014F1C0BF20B00C5C42A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C8801511C0BF20B00C5C42A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 				2C8801571C0BF20B00C5C42A /* Main.storyboard */,
 				2C8801811C0BFB8600C5C42A /* m.mp3 */,
 				2C8801831C0BFD9000C5C42A /* qbd.caf */,
+				2C6734821C2E3CAD00D8A72C /* PrefixHeader.pch */,
 				2C88015A1C0BF20B00C5C42A /* Assets.xcassets */,
 				2C88015C1C0BF20B00C5C42A /* LaunchScreen.storyboard */,
 				2C88015F1C0BF20B00C5C42A /* Info.plist */,
@@ -493,6 +495,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = XMAudioSynthesis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +516,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = XMAudioSynthesis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

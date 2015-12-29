@@ -10,6 +10,13 @@
 
 /// 合成时间有最长的那个决定，短的不会重复
 @interface XMAudioMix : NSObject
+
+/*! 
+ ffdsfs
+ */
+@property (nonatomic,assign) BOOL f;
+
+
 + (OSStatus)mixAudio:(NSString *)audioPath1
             andAudio:(NSString *)audioPath2
               toFile:(NSString *)outputPath
